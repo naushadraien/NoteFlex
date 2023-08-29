@@ -16,7 +16,7 @@ const Signup = (props) => {
     e.preventDefault();
     const { name, email, password } = credentials;
     //API CALL or FETCH for logging in the existing user
-    const response = await fetch("http://localhost:5000/api/auth/createuser", {
+    const response = await fetch("https://noteflex.onrender.com/api/auth/createuser", {
       //using destructuring
       method: "POST", // *GET, POST, PUT, DELETE, etc.
       headers: {

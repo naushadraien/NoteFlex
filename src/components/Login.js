@@ -10,7 +10,7 @@ const Login = (props) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     //API CALL or FETCH for logging in the existing user
-    const response = await fetch("http://localhost:5000/api/auth/login", {
+    const response = await fetch("https://noteflex.onrender.com/api/auth/login", {
       method: "POST", // *GET, POST, PUT, DELETE, etc.
       headers: {
         //this was copied from header section of update Note of thunderclient

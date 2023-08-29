@@ -1,4 +1,3 @@
-import cors from "cors";
 import { config } from "dotenv";
 import connectToMongo from "./db.js";
 import express from "express";
@@ -10,14 +9,6 @@ const app = express();
 config({
   path: "./config.env",
 });
-
-app.use(
-  cors({
-    origin: [process.env.FRONTEND_URL],
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    credentials: true,
-  })
-);
 
 app.use(express.json());
 
