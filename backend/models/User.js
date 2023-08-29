@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 const { Schema } = mongoose;
 
 const UserSchema = new Schema({
@@ -27,4 +27,4 @@ const UserSchema = new Schema({
   // User.createIndexes() is removed for not making the unique key for email
 //   User.createIndexes();
 
-  module.exports = User;
+export default User;

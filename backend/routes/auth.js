@@ -1,10 +1,10 @@
-const express = require('express');
-const User = require('../models/User');
+import express from 'express';
+import User from'../models/User.js';
+import { body, validationResult } from'express-validator';
+import bcrypt from 'bcryptjs';
+import jwt from'jsonwebtoken';
+import fetchuser from'../middleware/fetchuser.js';
 const router = express.Router();
-const { body, validationResult } = require('express-validator');
-const bcrypt = require('bcryptjs');
-const jwt = require('jsonwebtoken');
-const fetchuser = require('../middleware/fetchuser');
 
 const JWT_SECRET = 'Rehanisgoodb$oy';
 
@@ -143,4 +143,4 @@ try {
 })
 
 
-module.exports = router
+export default router;
