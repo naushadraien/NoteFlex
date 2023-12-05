@@ -79,7 +79,7 @@ const NoteState = (props) => {
       },
     });
     const json = response.json();
-    console.log(json);
+    // console.log(json);
 
     // console.log("Deleting the note with id" + id);
     const newNotes = notes.filter((note) => {
@@ -101,7 +101,7 @@ const NoteState = (props) => {
       body: JSON.stringify({ title, description, tag }),
     });
     const json = await response.json();
-    console.log(json);
+    // console.log(json);
 
     //let newNotes = JSON.parse(JSON.stringify(notes)) makes a copy of previous notes and then it will be updated
     let newNotes = JSON.parse(JSON.stringify(notes));
